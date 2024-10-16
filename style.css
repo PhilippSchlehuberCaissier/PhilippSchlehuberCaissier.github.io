@@ -1,0 +1,107 @@
+/* styles.css */
+
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base styles */
+:root {
+    --text-color: #333;
+    --background-color: #fff;
+    --heading-color: #2c3e50;
+    --link-color: #3498db;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: var(--heading-color);
+    margin-bottom: 15px;
+}
+
+.section {
+    margin-bottom: 30px;
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Dark mode styles */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --text-color: #f0f0f0;
+        --background-color: #222;
+        --heading-color: #ecf0f1;
+        --link-color: #5dade2;
+    }
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    h2 {
+        font-size: 1.4em;
+    }
+}
+
+/* Additional styles */
+header {
+    margin-bottom: 20px;
+}
+
+nav {
+    margin-bottom: 20px;
+}
+
+nav a {
+    margin-right: 10px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+footer {
+    margin-top: 30px;
+    font-size: 0.9em;
+    color: #777;
+}
+
+table, th, td {
+    border: 2px solid #333; /* Thicker, darker border */
+    border-collapse: collapse;
+    padding: 5px; /* Add some padding inside cells */
+}
+
+th {
+    background-color: #f2f2f2; /* Light gray background for header cells */
+}
+
+.my-special-table, .my-special-table th, .my-special-table td {
+    border: 1px solid blue;
+    border-collapse: collapse;
+}
